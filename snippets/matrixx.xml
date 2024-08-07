@@ -25,6 +25,9 @@
            sync-j="4"
            revision="refs/heads/14.0" />
 
+  <remote name="shiryu"
+          fetch="https://github.com/Shiryu-Kernel" />
+
   <project path="android" name="manifest_mtx" revision="14.0" remote="skyy" />
 
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="matrixx" />
@@ -76,4 +79,13 @@
 
   <!--project path="vendor/certification" name="android_vendor_certification" remote="matrixx-gitlab" />-->
   <project path="vendor/gapps" name="android_vendor_gapps" remote="bitbucket" />
+
+
+  <!-- Tree -->
+  <project path="vendor/xiaomi/surya" name="vendor_xiaomi_surya" revision="qpr3" remote="skyy" />
+  <project path="vendor/xiaomi/surya-miuicamera" name="vendor_xiaomi_surya-miuicamera" revision="14-tes" remote="skyy" />
+  <project path="device/xiaomi/surya-miuicamera" name="device_xiaomi_surya-miuicamera" revision="14-qpr3" remote="skyy" />
+  <project path="kernel/xiaomi/surya" name="kernel_xiaomi_surya" revision="4.14" remote="shiryu" />
+  <project path="vendor/private-keys/keys" name="keys" revision="full" remote="skyy" />
+  <project path="device/xiaomi/surya/parts" name="parts" revision="qpr3" remote="skyy" />
 </manifest>
