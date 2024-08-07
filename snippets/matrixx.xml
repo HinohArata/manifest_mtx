@@ -25,7 +25,7 @@
            sync-j="4"
            revision="refs/heads/14.0" />
 
-  <project path="android" name="android" remote="matrixx" />
+  <project path="android" name="manifest_mtx" revision="14.0" remote="skyy" />
 
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="matrixx" />
 
