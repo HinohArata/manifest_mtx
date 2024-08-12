@@ -9,12 +9,12 @@ cd matrixx
 ```
 ### Initializing Repo
 ```
-repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
+repo init --depth=1 --no-repo-verify -u https://github.com/HinohArata/manifest_mtx -b 14.0 --git-lfs -g default,-mips,-darwin,-notdefault
 ```
 
 ### Now sync sources
 ```
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune --retry-fetches=5 -j$(nproc --all)
 ```
 
 ### Now run
